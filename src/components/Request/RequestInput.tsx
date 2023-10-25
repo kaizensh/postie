@@ -8,6 +8,8 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 
+import { Button } from '@/components/ui/button';
+
 function RequestInput() {
   return (
     <>
@@ -27,6 +29,9 @@ function RequestInput() {
         </div>
         <div className='flex flex-col w-full'>
           <Input />
+        </div>
+        <div>
+          <Button>Send</Button>
         </div>
       </div>
     </>

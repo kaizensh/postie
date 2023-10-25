@@ -8,20 +8,24 @@
 // # Main
 // ## Left Column (Request)
 // ### Request Input
-import RequestInput from '@/components/RequestInput';
+import RequestInput from '@/components/Request/RequestInput';
 // ### Request Menu
-import RequestMenu from '@/components/RequestMenu';
+import RequestMenu from '@/components/Request/RequestMenu';
 // ### Request Body
-import RequestBody from '@/components/RequestBody';
+import RequestBody from '@/components/Request/RequestBody';
 
 // ## Right Column (Response)
 // ### Response Status
-import ResponseStatus from '@/components/ResponseStatus';
+import ResponseStatus from '@/components/Response/ResponseStatus';
 // ### Response Menu
-import ResponseMenu from '@/components/ResponseMenu';
+import ResponseMenu from '@/components/Response/ResponseMenu';
 
-// Response Tab | Headers Tab
-// Response Body | Headers
+// ### Response Preview
+import ResponsePreview from '@/components/Response/ResponsePreview';
+// ### Response Headers
+import ResponseHeaders from '@/components/Response/ResponseHeaders';
+
+import { Separator } from '@/components/ui/separator';
 
 // Footer
 
@@ -48,6 +52,7 @@ function App() {
               Response
               <ResponseStatus />
               <ResponseMenu />
+              {/* <ResponsePreview /> */}
             </aside>
           </div>
 

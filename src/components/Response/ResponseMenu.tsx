@@ -1,5 +1,8 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
+import ResponsePreview from '@/components/Response/ResponsePreview';
+import ResponseHeaders from '@/components/Response/ResponseHeaders';
+
 function ResponseMenuTabs() {
   return (
     <Tabs
@@ -11,8 +14,12 @@ function ResponseMenuTabs() {
         <TabsTrigger value='cookies'>Cookies</TabsTrigger>
       </TabsList>
 
-      <TabsContent value='preview'>JSON Preview</TabsContent>
-      <TabsContent value='headers'>Headers table</TabsContent>
+      <TabsContent value='preview'>
+        <ResponsePreview />
+      </TabsContent>
+      <TabsContent value='headers'>
+        <ResponseHeaders />
+      </TabsContent>
       <TabsContent value='cookies'>Cookies table</TabsContent>
     </Tabs>
   );

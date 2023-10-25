@@ -1,5 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
+import RequestForm from '@/components/Request/RequestForm';
+
 function RequestMenuTabs() {
   return (
     <Tabs
@@ -13,7 +15,9 @@ function RequestMenuTabs() {
       </TabsList>
 
       <TabsContent value='body'>Body</TabsContent>
-      <TabsContent value='headers'>Headers table</TabsContent>
+      <TabsContent value='headers'>
+        <RequestForm />
+      </TabsContent>
       <TabsContent value='query'>Query table</TabsContent>
       <TabsContent value='auth'>Auth table</TabsContent>
     </Tabs>
